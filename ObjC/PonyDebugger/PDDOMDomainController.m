@@ -741,6 +741,8 @@ static NSString *const kPDDOMAttributeParsingRegex = @"[\"'](.*)[\"']";
             }
             
             NSString *stringValue = [self stringForValue:value atKeyPath:keyPath onObject:object];
+            if(!stringValue && value)
+                stringValue = [value description];
             if (stringValue) {
                 [attributes addObjectsFromArray:@[ keyPath, stringValue ]];
             }
