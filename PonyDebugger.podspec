@@ -8,7 +8,7 @@ Pod::Spec.new do |s|
                     It is a client library and gateway server combination that uses Chrome Developer Tools on your browser to debug your application's network traffic and managed object contexts.
                    DESC
   s.author       = 'Square'
-  s.source       = { :git => 'https://github.com/square/PonyDebugger.git', :tag => 'v0.3.0' }
+  s.source       = { :git => 'https://github.com/niklassaers/PonyDebugger.git' }
   s.license      = 'Apache License, Version 2.0'
 
   # Platform setup
